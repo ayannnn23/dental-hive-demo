@@ -1,14 +1,15 @@
-# dental-hive-demo<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Dental Hive | Modern Dental Care in Quezon City</title>
-  <meta name="description" content="Dental Hive provides modern dental care in Quezon City, Metro Manila. Explore our dental services and book an appointment.">
+  <meta name="description" content="Dental Hive — thoughtful dental care in Quezon City, Metro Manila.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -16,282 +17,449 @@
 
 <body>
 
+  <!-- DEMO LABEL -->
+  <div class="demo-bar">
+    <span>WEBSITE CONCEPT</span>
+    <span>Dental Hive • Quezon City</span>
+  </div>
+
   <!-- NAVBAR -->
   <header class="navbar">
-    <div class="container nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">✦</span>
+      <span>
+        <strong>Dental</strong>
+        <small>HIVE</small>
+      </span>
+    </a>
 
-      <a href="#home" class="logo">
-        <span class="logo-icon">✦</span>
-        Dental <strong>Hive</strong>
-      </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#care">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-      <nav class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#about">Why Us</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <a href="#appointment" class="nav-button">
+      Book an Appointment
+      <span>↗</span>
+    </a>
 
-      <a href="#appointment" class="nav-button">
-        Book Appointment
-      </a>
-
-    </div>
+    <button class="menu-btn" id="menuBtn">☰</button>
   </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#care">Why Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#appointment">Book Appointment</a>
+  </div>
 
 
   <!-- HERO -->
   <main>
 
-    <section class="hero" id="home">
-      <div class="container hero-grid">
+    <section class="hero">
 
-        <div class="hero-content">
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
 
-          <span class="eyebrow">
-            MODERN DENTAL CARE · QUEZON CITY
-          </span>
+      <div class="hero-content">
 
-          <h1>
-            A healthier smile
-            <span>starts here.</span>
-          </h1>
-
-          <p>
-            Comfortable, modern dental care designed to help
-            you smile with confidence.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#appointment" class="primary-button">
-              Book an Appointment →
-            </a>
-
-            <a href="tel:+639660039279" class="secondary-button">
-              Call Clinic
-            </a>
-          </div>
-
-          <div class="hero-trust">
-            <div>
-              <strong>8+</strong>
-              <span>Dental Services</span>
-            </div>
-
-            <div>
-              <strong>📍</strong>
-              <span>Quezon City</span>
-            </div>
-
-            <div>
-              <strong>✓</strong>
-              <span>Appointments</span>
-            </div>
-          </div>
-
+        <div class="eyebrow">
+          <span class="pulse"></span>
+          Dental Care • Quezon City
         </div>
 
+        <h1>
+          A healthier smile,
+          <em>beautifully cared for.</em>
+        </h1>
 
-        <div class="hero-card">
+        <p>
+          Thoughtful dental care designed around comfort,
+          confidence and your everyday smile.
+        </p>
 
-          <div class="hero-card-top">
-            <span class="status-dot"></span>
-            Accepting Appointments
-          </div>
-
-          <div class="smile-icon">
-            🦷
-          </div>
-
-          <h3>
-            Your smile,<br>
-            our priority.
-          </h3>
-
-          <p>
-            Professional dental services in a comfortable
-            and welcoming environment.
-          </p>
-
-          <a href="#services" class="card-link">
-            Explore Services →
+        <div class="hero-actions">
+          <a href="#appointment" class="btn btn-primary">
+            Book an Appointment
+            <span>→</span>
           </a>
 
+          <a href="#services" class="btn btn-outline">
+            Explore Services
+          </a>
+        </div>
+
+        <div class="hero-location">
+          <span>⌖</span>
+          KL Bldg, 15 Visayas Ave, Diliman, Quezon City
         </div>
 
       </div>
+
+      <!-- FLOATING CARD -->
+      <div class="hero-card">
+
+        <div class="card-top">
+          <span>YOUR SMILE</span>
+          <span class="card-icon">✦</span>
+        </div>
+
+        <h3>Care that feels<br>personal.</h3>
+
+        <p>
+          From routine dental care to cosmetic
+          treatments, every visit starts with you.
+        </p>
+
+        <a href="#appointment">
+          Start your visit <span>↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip">
+
+      <div class="trust-item">
+        <span class="trust-icon">✦</span>
+        <div>
+          <strong>Modern Care</strong>
+          <small>Patient-focused experience</small>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span class="trust-icon">◈</span>
+        <div>
+          <strong>Complete Dentistry</strong>
+          <small>Care for every smile</small>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span class="trust-icon">⌁</span>
+        <div>
+          <strong>Easy Appointments</strong>
+          <small>Schedule your visit</small>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span class="trust-icon">♡</span>
+        <div>
+          <strong>Welcoming Space</strong>
+          <small>Comfortable for everyone</small>
+        </div>
+      </div>
+
     </section>
 
 
     <!-- SERVICES -->
-    <section class="services section" id="services">
+    <section class="section services-section" id="services">
 
-      <div class="container">
+      <div class="section-heading">
 
-        <div class="section-heading">
-          <span class="eyebrow">OUR SERVICES</span>
+        <div>
+          <span class="section-label">OUR SERVICES</span>
 
           <h2>
-            Complete care for<br>
-            <span>your smile.</span>
+            Complete care for
+            <em>your smile.</em>
           </h2>
+        </div>
+
+        <p>
+          Explore a range of dental services designed
+          to support your oral health and confidence.
+        </p>
+
+      </div>
+
+
+      <div class="services-grid">
+
+        <article class="service-card service-featured">
+
+          <div class="service-number">01</div>
+
+          <div class="service-icon">✧</div>
+
+          <h3>Cosmetic<br> Dentistry</h3>
 
           <p>
-            From preventive care to cosmetic treatments,
-            Dental Hive offers a range of dental services.
+            Enhance your smile with thoughtful
+            cosmetic dental care.
           </p>
-        </div>
+
+          <a href="#appointment">Learn more →</a>
+
+        </article>
 
 
-        <div class="service-grid">
+        <article class="service-card">
 
-          <article class="service-card">
-            <div class="service-icon">✨</div>
-            <h3>Teeth Whitening</h3>
-            <p>Brighten your smile and boost your confidence.</p>
-            <a href="#appointment">Learn more →</a>
-          </article>
+          <div class="service-number">02</div>
 
+          <div class="service-icon">◌</div>
 
-          <article class="service-card">
-            <div class="service-icon">😁</div>
-            <h3>Cosmetic Dentistry</h3>
-            <p>Personalized treatments designed for your smile.</p>
-            <a href="#appointment">Learn more →</a>
-          </article>
+          <h3>Teeth<br> Whitening</h3>
 
+          <p>
+            Give your smile a brighter,
+            refreshed appearance.
+          </p>
 
-          <article class="service-card">
-            <div class="service-icon">🏥</div>
-            <h3>Oral Surgery</h3>
-            <p>Professional care for a range of oral procedures.</p>
-            <a href="#appointment">Learn more →</a>
-          </article>
+          <a href="#appointment">Learn more →</a>
+
+        </article>
 
 
-          <article class="service-card">
-            <div class="service-icon">🩻</div>
-            <h3>Panoramic X-ray</h3>
-            <p>Convenient dental imaging for better evaluation.</p>
-            <a href="#appointment">Learn more →</a>
-          </article>
+        <article class="service-card">
+
+          <div class="service-number">03</div>
+
+          <div class="service-icon">◇</div>
+
+          <h3>Root<br> Canal</h3>
+
+          <p>
+            Professional care for teeth
+            requiring root canal treatment.
+          </p>
+
+          <a href="#appointment">Learn more →</a>
+
+        </article>
 
 
-          <article class="service-card">
-            <div class="service-icon">🦷</div>
-            <h3>Tooth Filling “Pasta”</h3>
-            <p>Restore damaged teeth and protect your smile.</p>
-            <a href="#appointment">Learn more →</a>
-          </article>
+        <article class="service-card">
+
+          <div class="service-number">04</div>
+
+          <div class="service-icon">＋</div>
+
+          <h3>Braces</h3>
+
+          <p>
+            Dental care options for
+            straighter, healthier smiles.
+          </p>
+
+          <a href="#appointment">Learn more →</a>
+
+        </article>
 
 
-          <article class="service-card">
-            <div class="service-icon">👑</div>
-            <h3>Crowns & Veneers</h3>
-            <p>Improve the appearance and function of your teeth.</p>
-            <a href="#appointment">Learn more →</a>
-          </article>
+        <article class="service-card">
+
+          <div class="service-number">05</div>
+
+          <div class="service-icon">▱</div>
+
+          <h3>Crowns &<br> Veneers</h3>
+
+          <p>
+            Restore and enhance the
+            appearance of your teeth.
+          </p>
+
+          <a href="#appointment">Learn more →</a>
+
+        </article>
 
 
-          <article class="service-card">
-            <div class="service-icon">🔬</div>
-            <h3>Root Canal</h3>
-            <p>Dental care focused on preserving your natural tooth.</p>
-            <a href="#appointment">Learn more →</a>
-          </article>
+        <article class="service-card">
+
+          <div class="service-number">06</div>
+
+          <div class="service-icon">⊙</div>
+
+          <h3>Panoramic<br> X-ray</h3>
+
+          <p>
+            Imaging support for a clearer
+            view of your dental needs.
+          </p>
+
+          <a href="#appointment">Learn more →</a>
+
+        </article>
 
 
-          <article class="service-card">
-            <div class="service-icon">🪥</div>
-            <h3>Braces</h3>
-            <p>Explore orthodontic care for a healthier smile.</p>
-            <a href="#appointment">Learn more →</a>
-          </article>
+        <article class="service-card">
 
-        </div>
+          <div class="service-number">07</div>
+
+          <div class="service-icon">+</div>
+
+          <h3>Tooth<br> Filling</h3>
+
+          <p>
+            Dental filling care for
+            damaged or decayed teeth.
+          </p>
+
+          <a href="#appointment">Learn more →</a>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-number">08</div>
+
+          <div class="service-icon">✦</div>
+
+          <h3>Oral<br> Surgery</h3>
+
+          <p>
+            Professional dental care for
+            surgical treatment needs.
+          </p>
+
+          <a href="#appointment">Learn more →</a>
+
+        </article>
 
       </div>
 
     </section>
 
 
-    <!-- WHY US -->
-    <section class="why-us section" id="about">
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
 
-      <div class="container why-grid">
+      <div class="about-image">
 
-        <div class="why-visual">
+        <div class="image-badge">
+          <span>✦</span>
+          <div>
+            <strong>Dental Hive</strong>
+            <small>Quezon City</small>
+          </div>
+        </div>
 
-          <div class="visual-circle">
-            🦷
+      </div>
+
+
+      <div class="about-content">
+
+        <span class="section-label">A DIFFERENT KIND OF DENTAL VISIT</span>
+
+        <h2>
+          Your comfort is part
+          of <em>the treatment.</em>
+        </h2>
+
+        <p>
+          Dental care doesn't have to feel complicated.
+          Dental Hive brings together essential dental
+          services in a welcoming environment where
+          your needs come first.
+        </p>
+
+        <p>
+          Whether you're looking after your oral health,
+          improving your smile or exploring treatment
+          options, your journey can start with a simple
+          conversation.
+        </p>
+
+        <div class="about-points">
+
+          <div>
+            <span>01</span>
+            <strong>Patient-focused</strong>
+            <small>Your concerns come first.</small>
           </div>
 
-          <div class="floating-card">
-            <strong>Care that feels different.</strong>
-            <span>Comfort · Convenience · Confidence</span>
+          <div>
+            <span>02</span>
+            <strong>Inclusive environment</strong>
+            <small>A welcoming space for everyone.</small>
+          </div>
+
+          <div>
+            <span>03</span>
+            <strong>Complete services</strong>
+            <small>Multiple dental needs, one clinic.</small>
           </div>
 
         </div>
 
+        <a href="#appointment" class="text-link">
+          Plan your visit <span>↗</span>
+        </a>
 
-        <div class="why-content">
+      </div>
 
-          <span class="eyebrow">WHY DENTAL HIVE</span>
-
-          <h2>
-            Dental care with
-            <span>you in mind.</span>
-          </h2>
-
-          <p>
-            We aim to make every dental visit comfortable,
-            convenient and welcoming.
-          </p>
+    </section>
 
 
-          <div class="feature">
+    <!-- FEATURE SECTION -->
+    <section class="feature-section" id="care">
 
-            <div class="feature-number">01</div>
+      <div class="feature-content">
 
-            <div>
-              <h3>Welcoming Environment</h3>
-              <p>
-                A comfortable space designed to make
-                your visit easier.
-              </p>
-            </div>
+        <span class="section-label">SMILE WITH CONFIDENCE</span>
 
+        <h2>
+          Small changes can make
+          a <em>big difference.</em>
+        </h2>
+
+        <p>
+          From a brighter smile to restorative dental care,
+          choose the service that fits your needs and start
+          your journey with Dental Hive.
+        </p>
+
+        <div class="feature-list">
+
+          <div>
+            <span>✓</span>
+            <p>Cosmetic dental services</p>
           </div>
 
-
-          <div class="feature">
-
-            <div class="feature-number">02</div>
-
-            <div>
-              <h3>Convenient Services</h3>
-              <p>
-                Multiple dental services available
-                in one location.
-              </p>
-            </div>
-
+          <div>
+            <span>✓</span>
+            <p>Restorative dental care</p>
           </div>
 
-
-          <div class="feature">
-
-            <div class="feature-number">03</div>
-
-            <div>
-              <h3>Flexible Payments</h3>
-              <p>
-                Credit cards, debit cards and NFC
-                mobile payments are accepted.
-              </p>
-            </div>
-
+          <div>
+            <span>✓</span>
+            <p>Diagnostic imaging</p>
           </div>
 
+          <div>
+            <span>✓</span>
+            <p>Orthodontic care</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="feature-visual">
+
+        <div class="big-circle"></div>
+
+        <div class="floating-stat">
+          <span>08</span>
+          <small>Dental<br>Services</small>
+        </div>
+
+        <div class="floating-word">
+          SMILE
         </div>
 
       </div>
@@ -300,72 +468,123 @@
 
 
     <!-- APPOINTMENT -->
-    <section class="appointment section" id="appointment">
+    <section class="appointment-section" id="appointment">
 
-      <div class="container appointment-box">
+      <div class="appointment-inner">
 
-        <div class="appointment-content">
+        <div class="appointment-copy">
 
-          <span class="eyebrow">READY TO SMILE?</span>
+          <span class="section-label">LET'S GET STARTED</span>
 
           <h2>
-            Book your dental
-            <span>appointment.</span>
+            Ready to care for
+            your <em>smile?</em>
           </h2>
 
           <p>
-            Take the first step toward a healthier,
-            more confident smile.
+            Schedule a visit or contact Dental Hive
+            to discuss your dental needs.
           </p>
 
-          <a href="tel:+639660039279" class="primary-button">
-            Call +63 966 003 9279
-          </a>
+          <div class="contact-mini">
+
+            <div>
+              <span>PHONE</span>
+              <a href="tel:+639660039279">
+                +63 966 003 9279
+              </a>
+            </div>
+
+            <div>
+              <span>LOCATION</span>
+              <p>
+                15 Visayas Ave, Diliman,<br>
+                Quezon City, Metro Manila
+              </p>
+            </div>
+
+          </div>
 
         </div>
 
 
-        <form class="appointment-form" id="appointmentForm">
+        <div class="appointment-form">
 
-          <input
-            type="text"
-            placeholder="Your name"
-            required
-          >
+          <div class="form-heading">
+            <span>01 / 02</span>
+            <strong>Request an appointment</strong>
+          </div>
 
-          <input
-            type="tel"
-            placeholder="Phone number"
-            required
-          >
+          <form id="appointmentForm">
 
-          <select required>
-            <option value="">Select a service</option>
-            <option>Teeth Whitening</option>
-            <option>Cosmetic Dentistry</option>
-            <option>Oral Surgery</option>
-            <option>Panoramic X-ray</option>
-            <option>Tooth Filling</option>
-            <option>Crowns & Veneers</option>
-            <option>Root Canal</option>
-            <option>Braces</option>
-          </select>
+            <div class="input-row">
 
-          <input
-            type="date"
-            required
-          >
+              <div class="input-group">
+                <label>Your name</label>
+                <input
+                  type="text"
+                  placeholder="John Doe"
+                  required
+                >
+              </div>
 
-          <textarea
-            rows="4"
-            placeholder="How can we help?"
-          ></textarea>
+              <div class="input-group">
+                <label>Phone number</label>
+                <input
+                  type="tel"
+                  placeholder="+63"
+                  required
+                >
+              </div>
 
-          <button type="submit" class="form-button">
-            Request Appointment →
-          </button>
+            </div>
 
-        </form>
+
+            <div class="input-group">
+              <label>Service you're interested in</label>
+
+              <select required>
+
+                <option value="">Select a service</option>
+
+                <option>Teeth Whitening</option>
+                <option>Cosmetic Dentistry</option>
+                <option>Oral Surgery</option>
+                <option>Panoramic X-ray</option>
+                <option>Tooth Filling</option>
+                <option>Crowns / Veneers</option>
+                <option>Root Canal</option>
+                <option>Braces</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="input-group">
+
+              <label>Message</label>
+
+              <textarea
+                rows="3"
+                placeholder="Tell us how we can help..."
+              ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="form-button">
+              Send Request
+              <span>↗</span>
+            </button>
+
+            <small class="form-note">
+              We'll use your details only to respond to your request.
+            </small>
+
+          </form>
+
+        </div>
 
       </div>
 
@@ -373,78 +592,55 @@
 
 
     <!-- CONTACT -->
-    <section class="contact section" id="contact">
+    <section class="contact-section" id="contact">
 
-      <div class="container">
+      <div>
 
-        <div class="section-heading">
-          <span class="eyebrow">VISIT DENTAL HIVE</span>
+        <span class="section-label">FIND US</span>
 
-          <h2>
-            We're here to
-            <span>help you smile.</span>
-          </h2>
+        <h2>
+          Come visit<br>
+          <em>Dental Hive.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="contact-info">
+
+        <div class="contact-block">
+
+          <span>ADDRESS</span>
+
+          <p>
+            KL Bldg, 15 Visayas Ave,<br>
+            Diliman, Quezon City,<br>
+            1128 Metro Manila, Philippines
+          </p>
+
         </div>
 
 
-        <div class="contact-grid">
+        <div class="contact-block">
 
-          <div class="contact-card">
+          <span>CALL US</span>
 
-            <span>📍</span>
+          <a href="tel:+639660039279">
+            +63 966 003 9279
+          </a>
 
-            <h3>Our Location</h3>
-
-            <p>
-              KL Bldg, 15 Visayas Ave,<br>
-              Diliman, Quezon City,<br>
-              1128 Metro Manila, Philippines
-            </p>
-
-          </div>
+        </div>
 
 
-          <div class="contact-card">
+        <div class="contact-block">
 
-            <span>📞</span>
+          <span>CONVENIENCE</span>
 
-            <h3>Call Us</h3>
-
-            <a href="tel:+639660039279">
-              +63 966 003 9279
-            </a>
-
-          </div>
-
-
-          <div class="contact-card">
-
-            <span>🅿️</span>
-
-            <h3>Parking</h3>
-
-            <p>
-              Free parking lot<br>
-              Free street parking<br>
-              On-site parking
-            </p>
-
-          </div>
-
-
-          <div class="contact-card">
-
-            <span>💳</span>
-
-            <h3>Payments</h3>
-
-            <p>
-              Credit cards<br>
-              Debit cards<br>
-              NFC mobile payments
-            </p>
-
-          </div>
+          <p>
+            On-site services<br>
+            Free parking available<br>
+            Appointments recommended
+          </p>
 
         </div>
 
@@ -458,20 +654,35 @@
   <!-- FOOTER -->
   <footer>
 
-    <div class="container footer-inner">
+    <div class="footer-top">
 
-      <a href="#home" class="logo">
-        <span class="logo-icon">✦</span>
-        Dental <strong>Hive</strong>
+      <a href="#" class="logo footer-logo">
+        <span class="logo-mark">✦</span>
+        <span>
+          <strong>Dental</strong>
+          <small>HIVE</small>
+        </span>
       </a>
 
       <p>
-        © 2026 Dental Hive. All rights reserved.
+        Thoughtful dental care in<br>
+        Quezon City, Metro Manila.
       </p>
 
-      <a href="tel:+639660039279">
-        +63 966 003 9279
+      <a href="tel:+639660039279" class="footer-call">
+        +63 966 003 9279 ↗
       </a>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>© 2026 Dental Hive</span>
+
+      <span>Website Concept • Demo</span>
+
+      <a href="#">Back to top ↑</a>
 
     </div>
 
@@ -479,12 +690,9 @@
 
 
   <!-- FLOATING CALL BUTTON -->
-  <a
-    href="tel:+639660039279"
-    class="floating-call"
-    aria-label="Call Dental Hive"
-  >
-    ☎
+  <a href="tel:+639660039279" class="floating-call">
+    <span>☎</span>
+    <small>Call</small>
   </a>
 
 
