@@ -1545,3 +1545,233 @@ img {
   }
 
 }
+/* =========================================================
+   PORTRAIT PHONE — FINAL FIX
+   ========================================================= */
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  /* ---------- NAV ---------- */
+
+  .navbar {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 18px;
+  }
+
+  .nav-links,
+  .nav-button {
+    display: none !important;
+  }
+
+  .menu-btn {
+    display: block !important;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    width: 100%;
+    min-height: 760px;
+    height: 100svh;
+    max-height: none;
+  }
+
+  .hero-content {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    max-width: none;
+
+    top: auto;
+    bottom: 55px;
+
+    transform: none;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: 350px;
+
+    font-size: 48px;
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-content > p {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-location {
+    max-width: 320px;
+  }
+
+
+  /* ---------- TRUST ---------- */
+
+  .trust-strip {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .trust-item {
+    min-width: 0;
+    width: 100%;
+  }
+
+
+  /* ---------- SECTIONS ---------- */
+
+  .section,
+  .appointment-section,
+  .contact-section {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  /* ---------- SERVICES ---------- */
+
+  .services-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+
+  /* ---------- ABOUT ---------- */
+
+  .about-section {
+    width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-content {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  /* ---------- FEATURE ---------- */
+
+  .feature-section {
+    width: 100%;
+  }
+
+  .feature-content {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .feature-visual {
+    width: 100%;
+    min-height: 390px;
+  }
+
+
+  /* ---------- APPOINTMENT ---------- */
+
+  .appointment-inner {
+    width: 100%;
+    display: block;
+  }
+
+  .appointment-copy {
+    width: 100%;
+  }
+
+  .appointment-form {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .input-row {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------- CONTACT ---------- */
+
+  .contact-info {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-block {
+    width: 100%;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    width: 100%;
+  }
+
+  .footer-top {
+    width: 100%;
+  }
+
+
+  /* ---------- HIDE DESKTOP FLOATING CARD ---------- */
+
+  .hero-card {
+    display: none !important;
+  }
+
+
+  /* ---------- TEXT SAFETY ---------- */
+
+  h1,
+  h2,
+  h3,
+  p {
+    overflow-wrap: break-word;
+  }
+
+}
