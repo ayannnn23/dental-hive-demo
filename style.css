@@ -1775,3 +1775,40 @@ img {
   }
 
 }
+/* ===== SERVICES - PORTRAIT PHONE FIX ===== */
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+  .services-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .service-card {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 20px 15px !important;
+    border-radius: 18px !important;
+  }
+
+  .service-card h3 {
+    font-size: 17px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .service-card p {
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+    margin: 0 !important;
+  }
+
+  .service-icon {
+    width: 42px !important;
+    height: 42px !important;
+    margin-bottom: 14px !important;
+  }
+
+}
